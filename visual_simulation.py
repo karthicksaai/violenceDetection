@@ -113,7 +113,13 @@ def run_visual_simulation():
                                 
                                 if (cls_name in ['Violence', 'violence'] or cls_id == 1) and conf > 0.6:
                                     print(f"🚨 VIOLENCE DETECTED on {cam_id} | Conf: {conf:.2f}")
-                                    engine.handle_detection(cam_id, 'Violence', conf)
+                                    engine.handle_detection(
+                                        cam_id, 
+                                        'Violence', 
+                                        conf,
+                                        bbox=[x1, y1, x2, y2],
+                                        frame=frame
+                                    )
                                     violence_triggered = True 
                                     detected_trigger = True
                                     
@@ -144,7 +150,13 @@ def run_visual_simulation():
                                     # We use a simple debounce/check to avoid flooding
                                     if cam_id != 'cam-01' and conf > 0.5:
                                         # "Person" detected by neighbor. Treat as 'Suspicious' event update.
-                                        engine.handle_detection(cam_id, 'Person', conf)
+                                        engine.handle_detection(
+                                            cam_id, 
+                                            'Person', 
+                                            conf,
+                                            bbox=[x1, y1, x2, y2],
+                                            frame=frame
+                                        )
 
                         if detected_trigger: break
 

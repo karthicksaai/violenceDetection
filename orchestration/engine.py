@@ -5,6 +5,9 @@ from typing import Dict, List, Optional
 from datetime import datetime
 from .models import EventContextCluster, EventType
 from .virtual_camera import VirtualCamera
+from .reid.feature_extractor import FeatureExtractor
+import numpy as np
+import cv2
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("Orchestrator")
@@ -14,6 +17,9 @@ class OrchestrationEngine:
         self.active_events: Dict[str, EventContextCluster] = {}
         self.cameras: Dict[str, VirtualCamera] = {}
         self.graph: Dict[str, List[str]] = {}
+        
+        # Initialize ReID Model
+        self.reid = FeatureExtractor()
         
         self._load_network(camera_graph_path)
 
@@ -38,21 +44,62 @@ class OrchestrationEngine:
             
             self.cameras[cam_data['id']] = cam
 
-    def handle_detection(self, camera_id: str, label: str, confidence: float, bbox=None):
+    def handle_detection(self, camera_id: str, label: str, confidence: float, bbox=None, frame=None):
+        """
+        bbox: [x1, y1, x2, y2]
+        frame: numpy array (BGR image)
+        """
         logger.info(f"Detection at {camera_id}: {label} ({confidence:.2f})")
         
-        # 1. ReID / Feature Extraction (Simulated)
-        # In a real system, we'd crop the bbox and run a ReID model.
-        # Here, we generate a 'Suspect ID' based on the event.
-        subject_id = f"SUSPECT-{int(time.time()) % 1000}"
+        # 1. Feature Extraction (Real ReID)
+        current_embedding = None
+        if bbox is not None and frame is not None:
+            x1, y1, x2, y2 = bbox
+            # Ensure valid crop
+            h, w = frame.shape[:2]
+            x1, y1 = max(0, x1), max(0, y1)
+            x2, y2 = min(w, x2), min(h, y2)
+            
+            if x2 > x1 and y2 > y1:
+                crop = frame[y1:y2, x1:x2]
+                current_embedding = self.reid.extract(crop)
         
-        existing_event = self._find_event_for_camera(camera_id)
+        # 2. Logic: ID Assignment via Cosine Similarity
+        subject_id = None
+        matched_event = None
+        
+        # Search active events for a match
+        if current_embedding is not None:
+            best_score = 0.0
+            
+            for event in self.active_events.values():
+                if event.status != 'active': continue
+                
+                # Check against target embedding
+                target_emb = event.metadata.get('target_embedding')
+                if target_emb is not None:
+                    score = self.reid.cosine_similarity(current_embedding, target_emb)
+                    logger.info(f"🔍 ReID Compare vs {event.metadata.get('subject_id')}: Score {score:.3f}")
+                    if score > 0.65: # Lowered Threshold for testing
+                        if score > best_score:
+                            best_score = score
+                            subject_id = event.metadata.get('subject_id')
+                            matched_event = event
+                            
+            if subject_id:
+                logger.info(f"🧬 ReID MATCH: {subject_id} (Score: {best_score:.3f})")
+        
+        # Fallback for new suspect (if no match or first time)
+        if not subject_id:
+             subject_id = f"SUSPECT-{int(time.time()) % 1000}"
+
+        
+        existing_event = matched_event if matched_event else self._find_event_for_camera(camera_id)
         
         if existing_event:
+            # If we matched visually, ensure we update the correct event even if finding by camera failed
             logger.info(f"Updating existing event {existing_event.event_id}")
-            # CONTINUOUS EXPANSION:
-            # If a downstream camera confirms detection, we must check *its* neighbors too.
-            # This enables the 2 -> 3 chain reaction.
+            
             self._activate_spatial_neighbors(existing_event, camera_id)
         else:
             new_event = EventContextCluster(
@@ -61,8 +108,12 @@ class OrchestrationEngine:
             )
             new_event.add_sensor(camera_id)
             new_event.confidence_score = confidence
-            # Store the ReID info in the event context
+            
+            # Store ReID Data
             new_event.metadata['subject_id'] = subject_id
+            if current_embedding is not None and label in ['Violence', 'Person']:
+                 # Set the anchor embedding for this suspect
+                 new_event.metadata['target_embedding'] = current_embedding
             
             self.active_events[new_event.event_id] = new_event
             logger.info(f"💥 NEW EVENT {new_event.event_id} | Subject: {subject_id}")
