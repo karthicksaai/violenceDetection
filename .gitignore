@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Large Files & Datasets
+*.mp4
+*.avi
+*.mov
+*.mkv
+CameraTest/
+runs/
+dataset/
+datasets/
+yolo_dataset/
+
+# Models (Optional: Uncomment if you want to exclude all models, but usually runs/ covers training outputs)
+# *.pt
+# *.onnx

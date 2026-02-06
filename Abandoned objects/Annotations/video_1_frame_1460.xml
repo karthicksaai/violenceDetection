@@ -1,0 +1,30 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>video_1_frame_1460.jpg</filename>
+	<path>/my-project-name/video_1_frame_1460.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>478</width>
+		<height>850</height>
+		<depth>3</depth>
+	</size>
+
+
+
+
+
+	<object>
+		<name>bag</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>158</xmin>
+			<ymin>342</ymin>
+			<xmax>183</xmax>
+			<ymax>388</ymax>
+		</bndbox>
+	</object>
+</annotation>

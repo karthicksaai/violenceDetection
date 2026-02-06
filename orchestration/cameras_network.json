@@ -1,0 +1,61 @@
+{
+    "cameras": [
+        {
+            "id": "cam-01",
+            "zone": "Entrance_Gate",
+            "lat": 12.9700,
+            "lng": 77.5900,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera1.mp4",
+            "status": "active"
+        },
+        {
+            "id": "cam-02",
+            "zone": "Parking_Lot_A",
+            "lat": 12.9730,
+            "lng": 77.5900,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera2.mp4",
+            "status": "standby"
+        },
+        {
+            "id": "cam-03",
+            "zone": "Main_Hallway",
+            "lat": 12.9760,
+            "lng": 77.5900,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera3.mp4",
+            "status": "standby"
+        },
+        {
+            "id": "cam-04",
+            "zone": "Back_Alley",
+            "lat": 12.9790,
+            "lng": 77.5900,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera4.mp4",
+            "status": "standby"
+        },
+        {
+            "id": "cam-05",
+            "zone": "Far_Outpost",
+            "lat": 12.9690,
+            "lng": 77.5900,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera5.mp4",
+            "status": "standby"
+        },
+        {
+            "id": "cam-06",
+            "zone": "Side_Entrance",
+            "lat": 12.9000,
+            "lng": 77.5910,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera5.mp4",
+            "status": "standby"
+        },
+        {
+            "id": "cam-07",
+            "zone": "Basement_Level",
+            "lat": 12.9735,
+            "lng": 77.5920,
+            "source": "/Users/yuva/development/violenceDetection/CameraTest/Camera4.mp4",
+            "status": "standby"
+        }
+    ],
+    "graph": {}
+}
