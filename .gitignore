@@ -37,7 +37,7 @@ ENV/
 *.avi
 *.mov
 *.mkv
-CameraTest/
+
 runs/
 dataset/
 datasets/
@@ -46,3 +46,4 @@ yolo_dataset/
 # Models (Optional: Uncomment if you want to exclude all models, but usually runs/ covers training outputs)
 # *.pt
 # *.onnx
+!CameraTest/*.mp4
