@@ -1,0 +1,20 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+Traceback (most recent call last):
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 226, in <module>
+    run_visual_simulation()
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 93, in run_visual_simulation
+    matched_event_id = engine.process_analysis(cam_id, analysis, frame)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/orchestration/engine.py", line 221, in process_analysis
+    self.handle_event_trigger(camera_id, alert_type, v_score, frame, embedding)
+                                                                     ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'embedding' where it is not associated with a value

@@ -57,5 +57,49 @@
             "status": "standby"
         }
     ],
-    "graph": {}
+    "graph": {
+        "cam-01": [
+            "cam-02",
+            "cam-05"
+        ],
+        "cam-02": [
+            "cam-03",
+            "cam-07"
+        ],
+        "cam-03": [
+            "cam-04"
+        ],
+        "cam-05": [
+            "cam-06"
+        ],
+        "cam-04": [],
+        "cam-06": [],
+        "cam-07": []
+    },
+    "travel_times": {
+        "cam-01_cam-02": {
+            "min": 0,
+            "max": 60
+        },
+        "cam-01_cam-05": {
+            "min": 0,
+            "max": 120
+        },
+        "cam-02_cam-03": {
+            "min": 0,
+            "max": 40
+        },
+        "cam-02_cam-07": {
+            "min": 0,
+            "max": 300
+        },
+        "cam-03_cam-04": {
+            "min": 0,
+            "max": 30
+        },
+        "cam-05_cam-06": {
+            "min": 0,
+            "max": 600
+        }
+    }
 }

@@ -9,32 +9,36 @@ import cv2
 class FeatureExtractor:
     def __init__(self, device='cpu'):
         self.device = torch.device(device)
-        print(f"🧠 Initializing ReID Feature Extractor (ResNet50) on {self.device}...")
+        print(f"🧠 Initializing ReID Feature Extractor (OSNet) on {self.device}...")
         
-        # Load Pretrained ResNet50
-        # We strip the final classification layer to get the feature embedding
-        weights = ResNet50_Weights.DEFAULT
-        self.model = resnet50(weights=weights)
-        
-        # Remove the fully connected layer (fc) to get raw embeddings (2048 dim)
-        self.model = nn.Sequential(*list(self.model.children())[:-1])
-        
+        # Load OSNet (Pretrained)
+        try:
+            from orchestration.reid.osnet import osnet_x1_0
+            # pretrained=True will look in ~/.cache/torch/checkpoints/ found by gdown
+            self.model = osnet_x1_0(pretrained=True)
+        except ImportError:
+            print("❌ Error importing OSNet. Please ensure orchestration.reid.osnet exists.")
+            raise
+        except Exception as e:
+            print(f"❌ Error loading OSNet weights: {e}")
+            raise
+
         self.model.to(self.device)
         self.model.eval()
         
-        # Standard ImageNet normalization
+        # OSNet Preprocessing (Standard ImageNet)
         self.preprocess = transforms.Compose([
-            transforms.Resize((256, 128)), # Standard ReID size
+            transforms.Resize((256, 128)),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], 
                                  std=[0.229, 0.224, 0.225])
         ])
-        print("✅ ReID Model Loaded Successfully.")
+        print("✅ ReID Model (OSNet) Loaded Successfully.")
 
     def extract(self, img_numpy):
         """
         Extract feature vector from an OpenCV image (BGR numpy array).
-        Returns: numpy array of shape (2048,)
+        Returns: numpy array of shape (512,)
         """
         try:
             # Convert BGR (OpenCV) to RGB
@@ -45,22 +49,31 @@ class FeatureExtractor:
             
             # Preprocess
             input_tensor = self.preprocess(img_pil)
-            input_batch = input_tensor.unsqueeze(0).to(self.device) # Batch of 1
+            
+            # TTA: Horizontal Flip
+            input_tensor_flip = self.preprocess(img_pil.transpose(Image.FLIP_LEFT_RIGHT))
+            
+            # Batch of 2 (Original + Flip)
+            input_batch = torch.stack([input_tensor, input_tensor_flip]).to(self.device)
             
             # Inference
             with torch.no_grad():
-                embedding = self.model(input_batch)
+                features = self.model(input_batch) # Returns (2, 512)
                 
-            # Flatten: [1, 2048, 1, 1] -> [2048]
+            # Average Features (TTA)
+            # features[0] is original, features[1] is flipped
+            embedding = features[0] + features[1] 
+            
+            # Flatten & Normalize
             embedding = torch.flatten(embedding).cpu().numpy()
             
-            # L2 Normalize (Essential for Cosine Similarity)
+            # L2 Normalize
             norm = np.linalg.norm(embedding)
-            return embedding / norm
+            return embedding / (norm + 1e-6)
             
         except Exception as e:
             print(f"❌ Feature Extraction Failed: {e}")
-            return np.zeros(2048)
+            return np.zeros(512)
 
     @staticmethod
     def cosine_similarity(emb1, emb2):

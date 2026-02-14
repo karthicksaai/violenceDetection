@@ -1,0 +1,325 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT 7d4f2c1f-eaef-4521-9191-dff8988228f8 | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 3.0s...
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+🚨 VIOLENCE DETECTED DETECTED on cam-01 | Conf: 0.76
+DEBUG: Cam-01 TID=1 Sim=1.00 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=1.00 Count=1
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.91 Streak=1 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:📸 Added new view to Gallery 7d4f2c1f-eaef-4521-9191-dff8988228f8 (Size=2)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.76
+DEBUG: Cam-01 TID=1 Sim=0.91 Count=2
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.91 Count=3
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.92 Streak=2 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:📸 Added new view to Gallery 7d4f2c1f-eaef-4521-9191-dff8988228f8 (Size=3)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.77
+DEBUG: Cam-01 TID=1 Sim=0.92 Count=4
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.92 Count=5
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.95 Streak=3 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:📸 Added new view to Gallery 7d4f2c1f-eaef-4521-9191-dff8988228f8 (Size=4)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.78
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=6
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=7
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.93 Streak=4 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:📸 Added new view to Gallery 7d4f2c1f-eaef-4521-9191-dff8988228f8 (Size=5)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.79
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=8
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=9
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+INFO:Orchestrator:🚀 Activating cam-02 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-05 NOW (Delay Complete)
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.98 Streak=5 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.79
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=10
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=11
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.97 Streak=6 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.80
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=12
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=13
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.95 Streak=7 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=14
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=15
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.95 Streak=8 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=16
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=17
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.96 Streak=9 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=18
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.90 Count=19
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.96 Streak=10 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=20
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=21
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.66 Streak=1 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.91
+INFO:Orchestrator:⏳ Scheduling activation for cam-06 in 3.0s...
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.95 Streak=11 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.84
+DEBUG: Cam-01 TID=1 Sim=0.88 Count=22
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.88 Count=23
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.66 Streak=2 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.90
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=0.95 Streak=12 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.84
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=24
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=25
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.67 Streak=3 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 Streak=3 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+INFO:Orchestrator:⏳ Scheduling activation for cam-03 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-07 in 3.0s...
+INFO:Orchestrator:📌 Locked Track ID 1 to Event 7d4f2c1f-eaef-4521-9191-dff8988228f8
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.90
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=26
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.89 Count=27
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.90
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.87 Count=28
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.87 Count=29
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.90
+INFO:Orchestrator:🚀 Activating cam-06 NOW (Delay Complete)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.87 Count=30
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.87 Count=31
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.89
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.88 Count=32
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.88 Count=33
+DEBUG: Cam-01 TID=2 Sim=0.55 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.89
+INFO:Orchestrator:🚀 Activating cam-03 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-07 NOW (Delay Complete)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.86
+DEBUG: Cam-01 TID=1 Sim=0.86 Count=34
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.86 Count=35
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.89
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.86
+DEBUG: Cam-01 TID=1 Sim=0.85 Count=36
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.85 Count=37
+DEBUG: Cam-01 TID=2 Sim=0.54 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.88
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.86
+DEBUG: Cam-01 TID=1 Sim=0.86 Count=38
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.86 Count=39
+DEBUG: Cam-01 TID=2 Sim=0.56 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.88
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.84 Count=40
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.84 Count=41
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.87, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.87
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.84 Count=42
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.84 Count=43
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=44
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=45
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=46
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=47
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.84
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=48
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=49
+DEBUG: Cam-01 TID=2 Sim=0.59 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.84
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=50
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=51
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=52
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.82 Count=53
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=54
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.57 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+DEBUG: Cam-01 TID=1 Sim=0.74 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.60 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.74 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.60 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.60 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.60 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.65 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.76 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.65 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+DEBUG: Cam-01 TID=2 Sim=0.77 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.67 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.77 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.67 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+DEBUG: Cam-01 TID=2 Sim=0.73 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.61 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.73 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.61 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+DEBUG: Cam-01 TID=2 Sim=0.69 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.59 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.69 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.59 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.05)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.80
+DEBUG: Cam-01 TID=1 Sim=0.66 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.64 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.66 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.64 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.05)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.79
+DEBUG: Cam-01 TID=1 Sim=0.63 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.63 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.58 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.06)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.78
+DEBUG: Cam-01 TID=1 Sim=0.66 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.52 Count=0
+DEBUG: Cam-01 TID=1 Sim=0.66 Count=0
+DEBUG: Cam-01 TID=2 Sim=0.52 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.06)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.78
+DEBUG: Cam-01 TID=1 Sim=0.73 Count=0
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.06)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.79
+INFO:Orchestrator:🔍 Best Candidate cam-06: Sim=0.62 Streak=1 (Event 7d4f2c1f-eaef-4521-9191-dff8988228f8)
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 7d4f2c1f-eaef-4521-9191-dff8988228f8 with new confidence 0.83

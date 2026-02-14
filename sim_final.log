@@ -1,0 +1,63 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT 20f4decf-08e1-448d-b153-238dde8bc68e | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 3.0s...
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.888 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.89)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.80
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.932 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.93)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.80
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.866 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.87)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.81
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.897 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.90)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.81
+INFO:Orchestrator:🚀 Activating cam-02 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-05 NOW (Delay Complete)
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.908 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.91)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.81
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.921 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.92)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.81
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.930 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.93)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.82
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.950 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.95)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.82
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.954 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.95)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.83
+INFO:Orchestrator:🔍 ReID Check on cam-01: Sim=0.954 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🔄 Updated Target Embedding for Event 20f4decf-08e1-448d-b153-238dde8bc68e (Sim=0.95)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 20f4decf-08e1-448d-b153-238dde8bc68e with new confidence 0.83
+INFO:Orchestrator:🔍 ReID Check on cam-02: Sim=0.623 (Event 20f4decf-08e1-448d-b153-238dde8bc68e)
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.62 with Event 20f4decf-08e1-448d-b153-238dde8bc68e
+INFO:Orchestrator:⏳ Scheduling activation for cam-03 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-07 in 3.0s...
+INFO:Orchestrator:📌 Locked Track ID 1 to Event 20f4decf-08e1-448d-b153-238dde8bc68e
+/Users/yuva/development/violenceDetection/orchestration/yolo_orchestrator.py:139: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  frame_buffer.append(torch.tensor(scene_feature, dtype=torch.float32))
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+🚨 VIOLENCE DETECTED DETECTED on cam-01 | Conf: 0.80

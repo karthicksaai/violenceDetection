@@ -1,0 +1,47 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:fastreid.utils.checkpoint:Loading checkpoint from /Users/yuva/development/violenceDetection/fast_reid_repo/market_sbs_R50.pth
+INFO:fastreid.utils.checkpoint:Some model parameters or buffers are not found in the checkpoint:
+  heads.weight
+  heads.bottleneck.0.{bias, weight, running_mean, running_var}
+INFO:fastreid.utils.checkpoint:The checkpoint state_dict contains keys that are not used by the model:
+  pixel_mean
+  pixel_std
+  heads.bnneck.{weight, bias, running_mean, running_var, num_batches_tracked}
+  heads.classifier.weight
+INFO:Orchestrator:✅ Loaded FastReID Extractor on mps
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+INFO:Orchestrator:Loaded 6 travel constraints
+🎥 Visual Simulation Started. Press 'q' to exit.
+Traceback (most recent call last):
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 441, in <module>
+    run_visual_simulation()
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 147, in run_visual_simulation
+    analysis = dispatcher.process_frame(frame, camera_id=cam_id, confirmed_track_ids=confirmed_ids)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/orchestration/yolo_orchestrator.py", line 174, in process_frame
+    v_logits = self.violence_gru(seq)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/orchestration/violence_detector.py", line 25, in forward
+    _, h = self.gru(x)
+           ^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 1413, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 367, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/Users/yuva/development/violenceDetection/venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 316, in check_input
+    raise RuntimeError(
+RuntimeError: input.size(-1) must be equal to input_size. Expected 512, got 2048

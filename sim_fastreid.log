@@ -1,0 +1,25 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+INFO:Orchestrator:Loaded 6 travel constraints
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+❌ Feature Extraction Failed: OpenCV(4.13.0) :-1: error: (-5:Bad argument) in function 'cvtColor'
+> Overload resolution failed:
+>  - src is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'src'
+
+Traceback (most recent call last):
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 441, in <module>
+    run_visual_simulation()
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 147, in run_visual_simulation
+    analysis = dispatcher.process_frame(frame, camera_id=cam_id, confirmed_track_ids=confirmed_ids)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/orchestration/yolo_orchestrator.py", line 143, in process_frame
+    primary_feature = embeddings[0] if embeddings else None
+                                       ^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()

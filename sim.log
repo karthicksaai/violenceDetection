@@ -1,0 +1,1102 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT f7ccb402-197c-46f4-85c6-5e0b79a7d831 | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 3.0s...
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.91 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+/Users/yuva/development/violenceDetection/orchestration/yolo_orchestrator.py:137: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  frame_buffer.append(torch.tensor(scene_feature, dtype=torch.float32))
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🚀 Activating cam-02 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-05 NOW (Delay Complete)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.89 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.89 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.90 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.91 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.89 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:⏳ Scheduling activation for cam-06 in 3.0s...
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.89 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 136 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.88 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.86 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:⏳ Scheduling activation for cam-03 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-07 in 3.0s...
+INFO:Orchestrator:📌 Locked Track ID 242 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🚀 Activating cam-06 NOW (Delay Complete)
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.87 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 265 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.86 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.84 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.88
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.84 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.88
+INFO:Orchestrator:🚀 Activating cam-03 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-07 NOW (Delay Complete)
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.86 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.87, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.87, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.84 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 404 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 388 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:⏳ Scheduling activation for cam-04 in 3.0s...
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 632 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🚀 Activating cam-04 NOW (Delay Complete)
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 704 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 783 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 816 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 862 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1062 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1206 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1274 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1311 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1345 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.77, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1439 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1507 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1538 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1565 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1563 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1593 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1627 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1591 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1701 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1740 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1773 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1738 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1873 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1872 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1906 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.87, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1935 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 1957 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.88
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2016 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2050 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2083 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2107 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2129 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2159 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2211 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2295 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.91, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.91
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2328 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.90, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.90
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2359 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2358 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.72 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2394 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.89, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.89
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.88
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2457 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.88, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.88
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2448 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.87, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2544 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.86, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2574 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2607 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.85, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2633 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2665 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2696 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2723 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2724 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2747 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2777 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2778 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2831 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2890 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2915 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2891 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2944 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.74 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2945 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 2965 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.75 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3048 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.81 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3211 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.71 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3238 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3264 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3285 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.87, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.87, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.83 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.87, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3403 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.87, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.87
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.81 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3554 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-06: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3644 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.73 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3780 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.83 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3862 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3896 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.81 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 3958 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4045 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4093 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4119 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.81 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4143 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4222 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4250 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4293 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4333 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.80 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4461 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.02)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.82 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.84 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4674 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.84 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4716 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4675 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4792 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4715 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.84, C:0.03)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.76 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4911 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 4959 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.83, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5120 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5235 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.82, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.81, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.04)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5353 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.80, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.67 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5435 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.82
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.69 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.80
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.79 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5520 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.70 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.07)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5559 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.83
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.68 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.06)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.78 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5595 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.65 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.77
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.76
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-04: VIOLENCE DETECTED (V:0.75, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.75
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+INFO:Orchestrator:🧬 ReID MATCH on cam-01: Sim=0.77 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+INFO:Orchestrator:📌 Locked Track ID 5706 to Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+INFO:Orchestrator:🧬 ReID MATCH on cam-03: Sim=0.66 with Event f7ccb402-197c-46f4-85c6-5e0b79a7d831
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.78, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.78
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-05: VIOLENCE DETECTED (V:0.79, C:0.05)
+INFO:Orchestrator:Updating existing event f7ccb402-197c-46f4-85c6-5e0b79a7d831 with new confidence 0.79
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+🚨 VIOLENCE DETECTED DETECTED on cam-01 | Conf: 0.80

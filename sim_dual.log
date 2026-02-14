@@ -1,0 +1,112 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:fastreid.utils.checkpoint:Loading checkpoint from /Users/yuva/development/violenceDetection/fast_reid_repo/market_sbs_R50.pth
+INFO:fastreid.utils.checkpoint:Some model parameters or buffers are not found in the checkpoint:
+  heads.bottleneck.0.{weight, running_var, running_mean, bias}
+  heads.weight
+INFO:fastreid.utils.checkpoint:The checkpoint state_dict contains keys that are not used by the model:
+  pixel_mean
+  pixel_std
+  heads.bnneck.{weight, bias, running_mean, running_var, num_batches_tracked}
+  heads.classifier.weight
+INFO:Orchestrator:✅ Loaded FastReID Extractor on mps
+INFO:Orchestrator:✅ Loaded OSNet for Violence GRU
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+INFO:Orchestrator:Loaded 6 travel constraints
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 0.5s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 0.5s...
+INFO:Orchestrator:🚀 Activating cam-02 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-05 NOW (Delay Complete)
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=1 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:📸 Added new view to Gallery 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 (Size=2)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.76
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=2 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:📸 Added new view to Gallery 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 (Size=3)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.77
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=3 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:📸 Added new view to Gallery 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 (Size=4)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.78
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=4 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:📸 Added new view to Gallery 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 (Size=5)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.79
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=5 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.79
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=6 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.80
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=1 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=1 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=7 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.81
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=2 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=2 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=8 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.81
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=3 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.96 Streak=3 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+INFO:Orchestrator:⏳ Scheduling activation for cam-03 in 0.5s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-07 in 0.5s...
+INFO:Orchestrator:📌 Locked Track ID 1 to Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081
+INFO:Orchestrator:🚀 Activating cam-03 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-07 NOW (Delay Complete)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.86
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.85
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=1 (Event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.84
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.83
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.82
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.81
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event 951e8e8f-b6d8-4b44-81b2-a5b68ce18081 with new confidence 0.81

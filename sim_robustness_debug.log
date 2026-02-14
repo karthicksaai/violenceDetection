@@ -1,0 +1,24 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:Orchestrator:✅ Loaded OSNet Feature Extractor
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT f9949094-a239-4e45-a457-1c837f27211c | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 3.0s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 3.0s...
+🧠 Initializing ReID Feature Extractor (OSNet) on mps...
+Successfully loaded imagenet pretrained weights from "/Users/yuva/.cache/torch/checkpoints/osnet_x1_0_imagenet.pth"
+✅ ReID Model (OSNet) Loaded Successfully.
+🎥 Visual Simulation Started. Press 'q' to exit.
+🚨 VIOLENCE DETECTED DETECTED on cam-01 | Conf: 0.76
+Traceback (most recent call last):
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 359, in <module>
+    run_visual_simulation()
+  File "/Users/yuva/development/violenceDetection/visual_simulation.py", line 93, in run_visual_simulation
+    matched_event_id = engine.process_analysis(cam_id, analysis, frame)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yuva/development/violenceDetection/orchestration/engine.py", line 183, in process_analysis
+    if self._is_spatially_feasible(last_cam, camera_id, time_delta):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrchestrationEngine' object has no attribute '_is_spatially_feasible'

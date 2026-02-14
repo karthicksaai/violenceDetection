@@ -1,0 +1,192 @@
+INFO:Orchestrator:🚀 Initializing YOLOOrchestrator on mps...
+INFO:Orchestrator:✅ Loaded YOLO model: yolo26n.pt
+INFO:fastreid.utils.checkpoint:Loading checkpoint from /Users/yuva/development/violenceDetection/fast_reid_repo/market_sbs_R50.pth
+INFO:fastreid.utils.checkpoint:Some model parameters or buffers are not found in the checkpoint:
+  heads.bottleneck.0.{weight, bias, running_var, running_mean}
+  heads.weight
+INFO:fastreid.utils.checkpoint:The checkpoint state_dict contains keys that are not used by the model:
+  pixel_mean
+  pixel_std
+  heads.bnneck.{weight, bias, running_mean, running_var, num_batches_tracked}
+  heads.classifier.weight
+INFO:Orchestrator:✅ Loaded FastReID Extractor on mps
+INFO:Orchestrator:✅ Loaded OSNet for Violence GRU
+INFO:Orchestrator:✅ Loaded GRU: violence_detection_model.pth
+INFO:Orchestrator:✅ Loaded GRU: crowd_anomaly_model.pth
+INFO:Orchestrator:Loaded 6 travel constraints
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.0 Area=135140
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.0 Area=135140
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.1 Area=136644
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.7 Area=136065
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.8 Area=136065
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=64.4 Area=136408
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:💥 NEW EVENT d552179e-2ab6-494e-9418-35bcae7f28ee | Type: VIOLENCE DETECTED
+INFO:Orchestrator:⏳ Scheduling activation for cam-02 in 0.5s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-05 in 0.5s...
+INFO:Orchestrator:🚀 Activating cam-02 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-05 NOW (Delay Complete)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=64.7 Area=136749
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=1 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:📸 Added new view to Gallery d552179e-2ab6-494e-9418-35bcae7f28ee (Size=2)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.76, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.76
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=45.1 Area=2528
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=65.3 Area=137564
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=2 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:📸 Added new view to Gallery d552179e-2ab6-494e-9418-35bcae7f28ee (Size=3)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.77, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.77
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=44.0 Area=2849
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=64.2 Area=135830
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=3 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:📸 Added new view to Gallery d552179e-2ab6-494e-9418-35bcae7f28ee (Size=4)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.78, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.78
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=44.8 Area=3042
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=64.4 Area=135252
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=4 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:📸 Added new view to Gallery d552179e-2ab6-494e-9418-35bcae7f28ee (Size=5)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.79
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=46.2 Area=3080
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.8 Area=134907
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=5 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.79, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.79
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=48.8 Area=3318
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.3 Area=133980
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=6 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.80, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.80
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=1 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=51.3 Area=3440
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=1 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.0 Area=134211
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=7 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.81
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=2 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=54.3 Area=3690
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=2 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.1 Area=133860
+INFO:Orchestrator:🔍 Best Candidate cam-01: Sim=1.00 Streak=8 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.81
+INFO:Orchestrator:🔍 Best Candidate cam-02: Sim=0.96 Streak=3 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:🧬 ReID MATCH on cam-02: Sim=0.96 Streak=3 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+INFO:Orchestrator:⏳ Scheduling activation for cam-03 in 0.5s...
+INFO:Orchestrator:⏳ Scheduling activation for cam-07 in 0.5s...
+INFO:Orchestrator:📌 Locked Track ID 1 to Event d552179e-2ab6-494e-9418-35bcae7f28ee
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=54.1 Area=3569
+INFO:Orchestrator:🚀 Activating cam-03 NOW (Delay Complete)
+INFO:Orchestrator:🚀 Activating cam-07 NOW (Delay Complete)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.9 Area=134211
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.82
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=72.3 Area=49680
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=59.2 Area=9360
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=53.4 Area=3360
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.8 Area=133860
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.83
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=72.4 Area=16616
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=50.4 Area=2788
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.9 Area=132696
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.84
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=72.5 Area=19856
+/Users/yuva/development/violenceDetection/orchestration/yolo_orchestrator.py:209: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  frame_buffer.append(torch.tensor(primary_feature, dtype=torch.float32))
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.6 Area=134320
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.84
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=69.8 Area=21684
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.1 Area=133736
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=65.9 Area=22680
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.9 Area=133152
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.6 Area=24447
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.5 Area=132795
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=72.5 Area=30858
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=52.5 Area=2905
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.7 Area=132795
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=75.8 Area=35000
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=53.2 Area=3276
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=62.1 Area=133965
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.86
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=78.0 Area=37395
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=54.0 Area=3780
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.7 Area=132795
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.86
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=78.4 Area=42864
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=51.3 Area=3696
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.1 Area=131984
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.86, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.86
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=75.6 Area=46158
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=48.0 Area=3741
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.5 Area=131984
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=75.8 Area=47084
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=47.6 Area=3784
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.3 Area=131984
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=77.6 Area=48506
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=77.9 Area=48348
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=47.0 Area=3612
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.5 Area=132210
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=49.3 Area=3237
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.1 Area=130816
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.85, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.85
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=52.5 Area=2656
+INFO:Orchestrator:🔍 Best Candidate cam-05: Sim=0.93 Streak=1 (Event d552179e-2ab6-494e-9418-35bcae7f28ee)
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=61.6 Area=129786
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.84
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=63.1 Area=129340
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.84, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.84
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=65.4 Area=134211
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.83
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=65.7 Area=136408
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.83, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.83
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=74.4 Area=152856
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.82
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=74.0 Area=154014
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.82
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=42.9 Area=2880
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=73.7 Area=157575
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.82, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.82
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=46.3 Area=3280
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=74.7 Area=157360
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.81
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=48.4 Area=3652
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=66.7 Area=135109
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.81
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=50.3 Area=3818
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=69.6 Area=129033
+WARNING:Orchestrator:🚨 ALERT on cam-01: VIOLENCE DETECTED (V:0.81, C:0.00)
+INFO:Orchestrator:Updating existing event d552179e-2ab6-494e-9418-35bcae7f28ee with new confidence 0.81
+WARNING:Orchestrator:⚠️ Low Light Crop Accepted: Brightness=48.9 Area=3696
