@@ -7,9 +7,9 @@ def test_assets():
     
     # 1. Check Video Files
     video_files = [
-        "/Users/yuva/development/violenceDetection/CameraTest/Camera1.mp4",
-        "/Users/yuva/development/violenceDetection/CameraTest/Camera2.mp4",
-        "/Users/yuva/development/violenceDetection/CameraTest/Camera3.mp4"
+        "CameraTest/Camera1.mp4",
+        "CameraTest/Camera2.mp4",
+        "CameraTest/Camera3.mp4"
     ]
     
     for v in video_files:
