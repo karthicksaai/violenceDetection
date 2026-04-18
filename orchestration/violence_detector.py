@@ -1,4 +1,3 @@
-
 import torch
 import torch.nn as nn
 import numpy as np
@@ -15,8 +14,6 @@ except ImportError:
 
 # -----------------------------------------------------------------
 # Import the novel BiGRU-TA architecture from the training module.
-# This ensures the inference code always matches the training code
-# (single source of truth — no duplicate class definitions).
 # -----------------------------------------------------------------
 try:
     from train_hockey_gru import HockeyGRU_BiTA, HockeyGRU_Legacy
@@ -24,28 +21,31 @@ except ImportError:
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
     from train_hockey_gru import HockeyGRU_BiTA, HockeyGRU_Legacy
 
+
+# =================================================================
+# NOVELTY 1: CAVE Gate — Context-Aware Violence Escalation Gate
+#
+# A multiplicative gating mechanism that modulates the raw GRU
+# violence score using crowd context features extracted from YOLO.
+#
+# The gate learns that a punch among 6 agitated people is more
+# likely to be genuine violence than the same punch in an empty
+# corridor.
+#
+# Crowd context vector (3 features):
+#   [0] norm_count     : number of people in frame, normalised by 10
+#   [1] norm_density   : mean inter-person distance (inverse), normalised
+#   [2] crowd_velocity : rate of bounding-box area change between frames
+# =================================================================
+
 class CAVEGate(nn.Module):
-    """
-    CAVE Gate: Context-Aware Violence Escalation Gate
-
-    A novel multiplicative gating mechanism that modulates the raw GRU
-    violence score using crowd context features extracted from YOLO detections.
-
-    The gate learns that a punch among 6 agitated people is more likely
-    to be genuine violence than the same punch in an empty corridor.
-
-    Crowd context vector (3 features):
-      [0] norm_count      : number of people in frame, normalised by 10
-      [1] norm_density    : mean inter-person distance (inverse), normalised
-      [2] crowd_velocity  : rate of bounding-box area change between frames
-    """
     def __init__(self, context_dim=3, hidden=16):
         super().__init__()
         self.gate_net = nn.Sequential(
             nn.Linear(context_dim, hidden),
             nn.ReLU(),
             nn.Linear(hidden, 1),
-            nn.Sigmoid()   # output in (0, 1) — scales the raw score
+            nn.Sigmoid()
         )
 
     def forward(self, raw_score: float, context_vec: np.ndarray) -> float:
@@ -58,26 +58,25 @@ class CAVEGate(nn.Module):
         """
         ctx = torch.tensor(context_vec, dtype=torch.float32).unsqueeze(0)
         with torch.no_grad():
-            gate = self.gate_net(ctx).item()   # scalar in (0,1)
+            gate = self.gate_net(ctx).item()
         # Multiplicative gate: amplify when context is alarming
-        gated = raw_score * (0.5 + gate)       # range: raw*0.5 → raw*1.5
+        # range: raw*0.5 (very calm) to raw*1.5 (very alarming)
+        gated = raw_score * (0.5 + gate)
         return float(np.clip(gated, 0.0, 1.0))
+
 
 class ViolenceDetector:
     """
     Real-time per-person violence classifier.
 
     Uses the novel BiGRU-TA (Bidirectional GRU + Temporal Attention)
-    model by default.  The detector maintains a sliding window buffer
+    model by default. The detector maintains a sliding window buffer
     of CNN features for each tracked person and runs GRU inference
     once the buffer is full.
 
-    Key upgrade over the legacy detector:
-    - process_frame() now returns BOTH the violence probability AND
-      the temporal attention weights, enabling frame-level explanations
-      of why a detection was triggered.
-    - get_attention_heatmap() converts weights to a visual colour bar
-      that can be rendered on the surveillance dashboard.
+    Novelties integrated:
+    - BiGRU-TA: Bidirectional GRU + Temporal Attention
+    - CAVE Gate: Context-Aware Violence Escalation Gate
     """
 
     def __init__(
@@ -96,11 +95,7 @@ class ViolenceDetector:
         # Load ReID Feature Extractor (ResNet50)
         self.extractor = FeatureExtractor(device=self.device)
 
-        # ---------------------------------------------------------
-        # Model selection:
-        #   use_legacy=False  → BiGRU-TA (novel, default)
-        #   use_legacy=True   → original unidirectional GRU
-        # ---------------------------------------------------------
+        # Model selection
         if use_legacy:
             self.model = HockeyGRU_Legacy(input_dim=512, hidden_dim=256).to(self.device)
             print("  Model: HockeyGRU_Legacy (original unidirectional GRU)")
@@ -124,8 +119,52 @@ class ViolenceDetector:
         self.buffer = deque(maxlen=self.sequence_length)
         self.threshold = threshold
 
+        # CAVE Gate — context-aware violence escalation
+        self.cave_gate = CAVEGate(context_dim=3, hidden=16)
+        self._prev_bbox_areas: list = []
+
     # ------------------------------------------------------------------
-    def process_frame(self, frame_bgr):
+    def compute_context_vector(self, all_bboxes: list) -> np.ndarray:
+        """
+        Compute the 3-feature crowd context vector from YOLO bounding boxes.
+
+        Args:
+            all_bboxes: list of (x1,y1,x2,y2) for ALL persons in the frame
+
+        Returns:
+            np.ndarray shape (3,): [norm_count, norm_density, crowd_velocity]
+        """
+        n = len(all_bboxes)
+
+        # Feature 1: normalised person count
+        norm_count = min(n / 10.0, 1.0)
+
+        # Feature 2: mean pairwise distance (inverted → higher = denser)
+        if n > 1:
+            centroids = np.array([[(b[0]+b[2])/2, (b[1]+b[3])/2] for b in all_bboxes])
+            dists = []
+            for i in range(len(centroids)):
+                for j in range(i+1, len(centroids)):
+                    d = np.linalg.norm(centroids[i] - centroids[j])
+                    dists.append(d)
+            mean_dist = np.mean(dists) if dists else 500.0
+            norm_density = float(np.clip(1.0 - mean_dist / 500.0, 0.0, 1.0))
+        else:
+            norm_density = 0.0
+
+        # Feature 3: crowd velocity (bbox area change rate)
+        curr_areas = [abs((b[2]-b[0])*(b[3]-b[1])) for b in all_bboxes]
+        if self._prev_bbox_areas and len(curr_areas) == len(self._prev_bbox_areas):
+            delta = np.mean(np.abs(np.array(curr_areas) - np.array(self._prev_bbox_areas)))
+            crowd_velocity = float(np.clip(delta / 5000.0, 0.0, 1.0))
+        else:
+            crowd_velocity = 0.0
+        self._prev_bbox_areas = curr_areas
+
+        return np.array([norm_count, norm_density, crowd_velocity], dtype=np.float32)
+
+    # ------------------------------------------------------------------
+    def process_frame(self, frame_bgr, all_bboxes: list = None):
         """
         Process a single BGR frame from one tracked person's crop.
 
@@ -133,18 +172,21 @@ class ViolenceDetector:
           1. Extract 512-d CNN feature vector (ResNet50 via FeatureExtractor)
           2. Append to the 20-frame sliding window buffer
           3. When buffer is full, run BiGRU-TA inference
-          4. Return (violence_prob, attn_weights)
+          4. Apply CAVE Gate using crowd context (if all_bboxes provided)
+          5. Return (violence_prob, attn_weights)
+
+        Args:
+            frame_bgr  : BGR crop of the person
+            all_bboxes : list of (x1,y1,x2,y2) for ALL people in frame
+                         used by CAVE Gate for crowd context
 
         Returns:
-            violence_prob (float)  : probability of violence in [0, 1]
-            attn_weights  (np.ndarray | None) : shape (T,) per-frame
-                importance weights, or None if buffer not yet full.
-                High values indicate the frames that most influenced
-                the classification decision.
+            violence_prob (float)           : context-modulated probability
+            attn_weights  (np.ndarray|None) : per-frame attention weights
         """
         # 1. Extract CNN feature
         try:
-            feat = self.extractor.extract(frame_bgr)  # (512,) numpy
+            feat = self.extractor.extract(frame_bgr)
             self.buffer.append(torch.tensor(feat, dtype=torch.float32))
         except Exception as e:
             print(f"Feature extraction error: {e}")
@@ -161,13 +203,18 @@ class ViolenceDetector:
         with torch.no_grad():
             logits, attn_weights = self.model(sequence)
             probs = torch.softmax(logits, dim=1)
-            violence_prob = probs[0][1].item()  # Class 1 = Violence
+            violence_prob = probs[0][1].item()
 
-        # Convert attention weights to numpy for the calling code
+        # Convert attention weights to numpy
         if attn_weights is not None:
-            attn_np = attn_weights[0].cpu().numpy()  # shape (T,)
+            attn_np = attn_weights[0].cpu().numpy()
         else:
             attn_np = None
+
+        # 5. CAVE Gate: modulate score with crowd context
+        if all_bboxes is not None and len(all_bboxes) > 0:
+            ctx_vec = self.compute_context_vector(all_bboxes)
+            violence_prob = self.cave_gate(violence_prob, ctx_vec)
 
         return violence_prob, attn_np
 
@@ -176,18 +223,6 @@ class ViolenceDetector:
         """
         Convert temporal attention weights into a colour heatmap bar
         suitable for overlaying on the video dashboard.
-
-        Each frame in the sliding window gets a colour ranging from
-        green (low attention = calm frame) to red (high attention =
-        critical / violent frame).
-
-        Args:
-            attn_weights (np.ndarray): shape (T,) from process_frame()
-            bar_width  (int): pixel width of the output bar
-            bar_height (int): pixel height of the output bar
-
-        Returns:
-            heatmap (np.ndarray): BGR image of shape (bar_height, bar_width, 3)
         """
         import cv2
 
@@ -195,7 +230,6 @@ class ViolenceDetector:
             return np.zeros((bar_height, bar_width, 3), dtype=np.uint8)
 
         T = len(attn_weights)
-        # Normalise to [0, 1]
         w = attn_weights - attn_weights.min()
         if w.max() > 0:
             w = w / w.max()
@@ -204,10 +238,9 @@ class ViolenceDetector:
         cell_w = bar_width // T
 
         for i, weight in enumerate(w):
-            # Green (low) → Red (high)
             g = int(255 * (1.0 - weight))
             r = int(255 * weight)
-            colour = (0, g, r)  # BGR
+            colour = (0, g, r)
             x1 = i * cell_w
             x2 = x1 + cell_w
             heatmap[:, x1:x2] = colour
