@@ -24,6 +24,44 @@ except ImportError:
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
     from train_hockey_gru import HockeyGRU_BiTA, HockeyGRU_Legacy
 
+class CAVEGate(nn.Module):
+    """
+    CAVE Gate: Context-Aware Violence Escalation Gate
+
+    A novel multiplicative gating mechanism that modulates the raw GRU
+    violence score using crowd context features extracted from YOLO detections.
+
+    The gate learns that a punch among 6 agitated people is more likely
+    to be genuine violence than the same punch in an empty corridor.
+
+    Crowd context vector (3 features):
+      [0] norm_count      : number of people in frame, normalised by 10
+      [1] norm_density    : mean inter-person distance (inverse), normalised
+      [2] crowd_velocity  : rate of bounding-box area change between frames
+    """
+    def __init__(self, context_dim=3, hidden=16):
+        super().__init__()
+        self.gate_net = nn.Sequential(
+            nn.Linear(context_dim, hidden),
+            nn.ReLU(),
+            nn.Linear(hidden, 1),
+            nn.Sigmoid()   # output in (0, 1) — scales the raw score
+        )
+
+    def forward(self, raw_score: float, context_vec: np.ndarray) -> float:
+        """
+        Args:
+            raw_score   : float, violence probability from GRU
+            context_vec : np.ndarray shape (3,)
+        Returns:
+            gated_score : float, context-modulated violence probability
+        """
+        ctx = torch.tensor(context_vec, dtype=torch.float32).unsqueeze(0)
+        with torch.no_grad():
+            gate = self.gate_net(ctx).item()   # scalar in (0,1)
+        # Multiplicative gate: amplify when context is alarming
+        gated = raw_score * (0.5 + gate)       # range: raw*0.5 → raw*1.5
+        return float(np.clip(gated, 0.0, 1.0))
 
 class ViolenceDetector:
     """
