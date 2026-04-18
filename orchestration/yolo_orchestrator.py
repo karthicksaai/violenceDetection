@@ -76,33 +76,25 @@ class YOLOOrchestrator:
     def is_valid_reid_crop(self, crop):
         if crop is None or crop.size == 0:
             return False
-
         h, w = crop.shape[:2]
         if h * w < 10000:
             return False
-
         aspect = h / float(w)
         if aspect < 0.3 or aspect > 3.5:
             return False
-
         gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-
         if cv2.Laplacian(gray, cv2.CV_64F).var() < 50:
             return False
-
         if gray.std() < 20:
             return False
-
         return True
 
     def is_valid_gru_crop(self, crop):
         if crop is None or crop.size == 0:
             return False
-
         h, w = crop.shape[:2]
         if h * w < 6000:
             return False
-
         return True
 
     # =====================================================
@@ -149,9 +141,13 @@ class YOLOOrchestrator:
             reverse=True
         )
 
+        # --- Collect ALL bboxes for CAVE Gate context vector ---
+        all_bboxes = [p["bbox"] for p in person_boxes]
+
         batch_crops = []
         batch_meta = []
         primary_feature = None
+        primary_crop = None
 
         # ---------------- Crop Loop ----------------
         for p in person_boxes[:5]:
@@ -166,10 +162,11 @@ class YOLOOrchestrator:
                 batch_crops.append(crop)
                 batch_meta.append(p)
 
-            # -------- GRU branch --------
+            # -------- GRU branch (largest valid crop) --------
             if primary_feature is None and self.is_valid_gru_crop(crop):
                 try:
                     primary_feature = self.osnet.extract(crop)
+                    primary_crop = crop
                 except Exception as e:
                     logger.error(f"OSNet extraction failed: {e}")
 
@@ -236,6 +233,7 @@ class YOLOOrchestrator:
             "violence_score": v_prob,
             "crowd_score": c_prob,
             "detections": detections_out,
+            "all_bboxes": all_bboxes,   # passed to CAVE Gate in engine
         }
 
         # ---------------- Alerts ----------------
